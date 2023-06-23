@@ -1,4 +1,4 @@
-export default function displayLists(props){
+export default function DisplayLists(props){
     return (
         <div className="container">
         {props.filteredArr.length>0 && props.filteredArr.map(item => {

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import DisplayLists from "./assets/displayLists"
+import DisplayLists from "./assets/DisplayLists"
 
 function App() {
 
