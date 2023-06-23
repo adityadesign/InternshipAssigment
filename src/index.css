@@ -51,8 +51,8 @@ body{
 }
 
 .listImg{
-    max-height: 150px;
-    max-width: 150px;
+    max-height: 140px;
+    max-width: 140px;
     min-height: 100px;
     min-width: 100px;
     object-fit: cover;
