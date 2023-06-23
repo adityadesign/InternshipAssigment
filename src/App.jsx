@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react"
 import DisplayLists from "./assets/DisplayLists"
+import Search from "./assets/Search"
+import ResultNotFound from "./assets/ResultNotFound"
 
 function App() {
 
@@ -42,19 +44,9 @@ function App() {
 
   return (
     <>
-      <div className="searchSection">
-        <label className="searchLabel" htmlFor="name">Search:</label>
-        <input className="searchBox" id="name" type="text" onChange={e => handleChange(e)}/>
-      </div>
-
+      <Search handleChange={handleChange}/>
       {dataArr.length===0 ? <div className="loading">Loading...</div> : <DisplayLists filteredArr={filteredArr}/>}
-
-      {flag && (
-        <>
-          <div className="notFound">Results not found</div>
-          <img className="notFoundImg" src="/notFound.svg" alt="" />
-        </>
-      )}
+      <ResultNotFound flag={flag}/>
     </>
   )
 }
